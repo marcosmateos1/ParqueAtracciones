@@ -15,33 +15,33 @@ public class ParqueAtracciones {
 
     public void agregarEmpleado(Empleado empleado) {
         listaEmpleados.add(empleado);
-        System.out.println("👷‍♂️ Empleado agregado: " + empleado.getNombre());
+        System.out.println("️ Empleado agregado: " + empleado.getNombre());
     }
 
     public void agregarAtraccion(Atraccion atraccion) {
         listaAtracciones.add(atraccion);
-        System.out.println("🎢 Atracción agregada: " + atraccion.getNombre());
+        System.out.println(" Atracción agregada: " + atraccion.getNombre());
     }
 
     public void agregarVisitante(Visitante visitante) {
         listaVisitantes.add(visitante);
-        System.out.println("🎟️ Visitante agregado: " + visitante.getNombre());
+        System.out.println("️ Visitante agregado: " + visitante.getNombre());
     }
 
     public void mostrarInformacionParque() {
-        System.out.println("\n📋 INFORMACIÓN DEL PARQUE:");
+        System.out.println(" INFORMACIÓN DEL PARQUE:");
         
-        System.out.println("\n👷 EMPLEADOS:");
+        System.out.println(" EMPLEADOS:");
         for (Empleado empleado : listaEmpleados) {
             System.out.println("- " + empleado.getNombre() + " (" + empleado.getPuesto() + ")");
         }
 
-        System.out.println("\n🎢 ATRACCIONES:");
+        System.out.println(" ATRACCIONES:");
         for (Atraccion atraccion : listaAtracciones) {
             System.out.println("- " + atraccion.getNombre() + " (Estado: " + atraccion.getEstado() + ")");
         }
 
-        System.out.println("\n🎟️ VISITANTES:");
+        System.out.println("️ VISITANTES:");
         for (Visitante visitante : listaVisitantes) {
             System.out.println("- " + visitante.getNombre() + " (Edad: " + visitante.getEdad() + ")");
         }

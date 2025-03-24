@@ -9,13 +9,13 @@ public class Main {
             int opcion;
             
             do {
-                System.out.println("\n🎡 MENÚ DEL PARQUE 🎡");
+                System.out.println(" MENU DEL PARQUE ?");
                 System.out.println("1. Agregar Empleado");
-                System.out.println("2. Agregar Atracción");
+                System.out.println("2. Agregar Atraccion");
                 System.out.println("3. Agregar Visitante");
-                System.out.println("4. Mostrar Información del Parque");
+                System.out.println("4. Mostrar Informacion del Parque");
                 System.out.println("5. Salir");
-                System.out.print("Elige una opción: ");
+                System.out.print("Elige una opcion: ");
                 
                 try {
                     opcion = scanner.nextInt();
@@ -67,13 +67,13 @@ public class Main {
                             
                         case 4 -> parque.mostrarInformacionParque();
                             
-                        case 5 -> System.out.println("👋 Saliendo del sistema...");
+                        case 5 -> System.out.println(" Saliendo del sistema...");
                             
-                        default -> System.out.println("❌ Opción inválida. Intenta nuevamente.");
+                        default -> System.out.println(" Opción inválida. Intenta nuevamente.");
                     }
                     
                 } catch (Exception e) {
-                    System.out.println("❌ Error en la entrada de datos. Intenta de nuevo.");
+                    System.out.println(" Error en la entrada de datos. Intenta de nuevo.");
                     scanner.nextLine(); // Limpiar buffer
                     opcion = 0;
                 }

@@ -13,22 +13,22 @@ public class Atraccion {
 
     public void iniciarAtraccion() {
         if (estado.equals("Operativa")) {
-            System.out.println("🎢 " + nombre + " ha comenzado a funcionar.");
+            System.out.println( "Operativa" + nombre + " ha comenzado a funcionar.");
         } else {
-            System.out.println("⚠️ " + nombre + " no puede iniciar porque está " + estado + ".");
+            System.out.println( "Operativa" + nombre + " no puede iniciar porque está " + estado + ".");
         }
     }
 
     public void detenerAtraccion() {
-        System.out.println("⛔ " + nombre + " ha sido detenida.");
+        System.out.println("Atraccion" + nombre + " ha sido detenida.");
     }
 
     public void cambiarEstado(String nuevoEstado) {
         if (nuevoEstado.equals("Operativa") || nuevoEstado.equals("En Mantenimiento") || nuevoEstado.equals("Fuera de Servicio")) {
             this.estado = nuevoEstado;
-            System.out.println("🔄 Estado de " + nombre + " cambiado a: " + estado);
+            System.out.println(" Estado de " + nombre + " cambiado a: " + estado);
         } else {
-            System.out.println("❌ Estado inválido.");
+            System.out.println(" Estado inválido.");
         }
     }
 
